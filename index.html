@@ -7,40 +7,39 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Dynamic Background Matrix -->
   <div class="bg-glow"></div>
 
-  <!-- Navigation Bar -->
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="brand">JONLILL<span class="dot">.</span></div>
     <ul class="nav-menu">
       <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#works">Selected Works</a></li>
-      <li><a href="#contact" class="nav-cta">Get in Touch</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
     </ul>
   </nav>
 
-  <!-- Hero Banner -->
+  <!-- Hero -->
   <header class="hero">
     <div class="hero-tag">FREELANCE CREATIVE STUDIO</div>
     <h1>Visuals Engineered for <span class="gradient-text">Impact & Motion</span>.</h1>
-    <p>Graphic Designer & Video Editor specializing in high-converting promo video edits, apparel artwork, and digital brand identities.</p>
+    <p>Graphic Designer & Video Editor specializing in high-converting promo edits, apparel artwork, and digital brand identities.</p>
     <div class="hero-actions">
       <a href="#works" class="btn btn-primary">Explore Portfolio</a>
       <a href="#contact" class="btn btn-ghost">Contact Jonlill</a>
     </div>
   </header>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about" class="container">
     <div class="card about-card">
       <div class="about-info">
-        <h2>Creative Profile</h2>
+        <h2>About Me</h2>
         <p>I'm Jonlill — a Graphic Designer and Video Editor with over 2 years of active freelance client experience and serving as Graphics Officer for school organizations. I turn concepts into sharp, high-tempo visual content that captures attention instantly.</p>
       </div>
       <div class="skills-box">
@@ -57,7 +56,7 @@
     </div>
   </section>
 
-  <!-- Services Section -->
+  <!-- Services -->
   <section id="services" class="container">
     <h2 class="section-heading">Services Offered</h2>
     <div class="grid grid-3">
@@ -83,67 +82,95 @@
     </div>
   </section>
 
-  <!-- Portfolio Section -->
+  <!-- Works -->
   <section id="works" class="container">
     <h2 class="section-heading">Showcase Works</h2>
 
     <div class="filter-bar">
-      <button class="filter-btn active" onclick="filterCategory('all')">All Works</button>
-      <button class="filter-btn" onclick="filterCategory('video')">Video Edits</button>
-      <button class="filter-btn" onclick="filterCategory('graphics')">Graphic Design</button>
+      <button class="filter-btn active" onclick="filterCategory('all', event)">All Works</button>
+      <button class="filter-btn" onclick="filterCategory('video', event)">Video Edits</button>
+      <button class="filter-btn" onclick="filterCategory('graphics', event)">Graphic Design</button>
     </div>
 
     <div class="grid grid-2">
 
-      <!-- Video 1 -->
+      <!-- Video Card 1 -->
       <div class="card work-card" data-category="video">
-        <div class="folder-banner video-banner">
-          <span class="folder-icon">🎥</span>
+        <a href="https://drive.google.com/file/d/1Kbg2nQjMol6kJgOmvI6z1SeD8xbi2X0g/view" target="_blank" class="video-thumbnail-wrapper">
+          <div class="video-overlay">
+            <div class="play-btn-circle">▶</div>
+          </div>
+          <div class="thumbnail-placeholder">
+            <span class="video-tag-icon">🎬</span>
+          </div>
+        </a>
+        <div class="work-details">
+          <span class="category-tag">Video Edit</span>
           <h3>Travel Vlog Edit</h3>
-        </div>
-        <div class="work-details">
-          <span class="category-tag">Video Edit</span>
           <p>Cinematic pacing, color balance, and sound design.</p>
-          <a href="https://drive.google.com/file/d/1Kbg2nQjMol6kJgOmvI6z1SeD8xbi2X0g/view" target="_blank" class="drive-link btn-play">Watch Video ↗</a>
+          <a href="https://drive.google.com/file/d/1Kbg2nQjMol6kJgOmvI6z1SeD8xbi2X0g/view" target="_blank" class="btn-play-link">
+            ▶ Play Video Edit
+          </a>
         </div>
       </div>
 
-      <!-- Video 2 -->
+      <!-- Video Card 2 -->
       <div class="card work-card" data-category="video">
-        <div class="folder-banner video-banner">
-          <span class="folder-icon">🎬</span>
+        <a href="https://drive.google.com/file/d/1c8lEHqT4l5_twsY2vFkD3PLVe29vwigA/view" target="_blank" class="video-thumbnail-wrapper">
+          <div class="video-overlay">
+            <div class="play-btn-circle">▶</div>
+          </div>
+          <div class="thumbnail-placeholder">
+            <span class="video-tag-icon">🎥</span>
+          </div>
+        </a>
+        <div class="work-details">
+          <span class="category-tag">Video Edit</span>
           <h3>University of the East Promo</h3>
-        </div>
-        <div class="work-details">
-          <span class="category-tag">Video Edit</span>
           <p>Fast-cut organizational promo highlight tape.</p>
-          <a href="https://drive.google.com/file/d/1c8lEHqT4l5_twsY2vFkD3PLVe29vwigA/view" target="_blank" class="drive-link btn-play">Watch Video ↗</a>
+          <a href="https://drive.google.com/file/d/1c8lEHqT4l5_twsY2vFkD3PLVe29vwigA/view" target="_blank" class="btn-play-link">
+            ▶ Play Video Edit
+          </a>
         </div>
       </div>
 
-      <!-- Video 3 -->
+      <!-- Video Card 3 -->
       <div class="card work-card" data-category="video">
-        <div class="folder-banner video-banner">
-          <span class="folder-icon">🏆</span>
+        <a href="https://drive.google.com/file/d/1aqiNG0yKAJJkfeBaLq3UIkGxyM_9rNyE/view" target="_blank" class="video-thumbnail-wrapper">
+          <div class="video-overlay">
+            <div class="play-btn-circle">▶</div>
+          </div>
+          <div class="thumbnail-placeholder">
+            <span class="video-tag-icon">🏆</span>
+          </div>
+        </a>
+        <div class="work-details">
+          <span class="category-tag">Video Edit</span>
           <h3>DISCERNED (Champion Reel)</h3>
-        </div>
-        <div class="work-details">
-          <span class="category-tag">Video Edit</span>
           <p>High-energy championship cut with audio sync.</p>
-          <a href="https://drive.google.com/file/d/1aqiNG0yKAJJkfeBaLq3UIkGxyM_9rNyE/view" target="_blank" class="drive-link btn-play">Watch Video ↗</a>
+          <a href="https://drive.google.com/file/d/1aqiNG0yKAJJkfeBaLq3UIkGxyM_9rNyE/view" target="_blank" class="btn-play-link">
+            ▶ Play Video Edit
+          </a>
         </div>
       </div>
 
-      <!-- Video 4 -->
+      <!-- Video Card 4 -->
       <div class="card work-card" data-category="video">
-        <div class="folder-banner video-banner">
-          <span class="folder-icon">🏎️</span>
-          <h3>Unicoss Garage Feature</h3>
-        </div>
+        <a href="https://drive.google.com/file/d/1FxNlyaxBDEIsZeaKzB9cx2skFkqrkKzT/view" target="_blank" class="video-thumbnail-wrapper">
+          <div class="video-overlay">
+            <div class="play-btn-circle">▶</div>
+          </div>
+          <div class="thumbnail-placeholder">
+            <span class="video-tag-icon">🏎️</span>
+          </div>
+        </a>
         <div class="work-details">
           <span class="category-tag">Video Edit</span>
+          <h3>Unicoss Garage Feature</h3>
           <p>Automotive showcase with smooth tracking edits.</p>
-          <a href="https://drive.google.com/file/d/1FxNlyaxBDEIsZeaKzB9cx2skFkqrkKzT/view" target="_blank" class="drive-link btn-play">Watch Video ↗</a>
+          <a href="https://drive.google.com/file/d/1FxNlyaxBDEIsZeaKzB9cx2skFkqrkKzT/view" target="_blank" class="btn-play-link">
+            ▶ Play Video Edit
+          </a>
         </div>
       </div>
 
