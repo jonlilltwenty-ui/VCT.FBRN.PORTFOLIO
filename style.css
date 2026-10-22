@@ -1,6 +1,6 @@
 :root {
   --bg: #090a0f;
-  --panel: rgba(18, 20, 29, 0.7);
+  --panel: rgba(18, 20, 29, 0.75);
   --border: rgba(255, 255, 255, 0.1);
   --accent: #6366f1;
   --accent-light: #a855f7;
@@ -169,7 +169,7 @@ body {
   background: var(--panel);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 1.8rem;
+  padding: 1.5rem;
   backdrop-filter: blur(10px);
 }
 
@@ -204,7 +204,7 @@ body {
 }
 
 .grid-3 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
-.grid-2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+.grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
 
 .service-box .service-icon {
   font-size: 2rem;
@@ -237,84 +237,30 @@ body {
   border-color: var(--accent);
 }
 
-/* Video Thumbnail Styling */
-.video-thumbnail-wrapper {
-  display: block;
-  width: 100%;
-  height: 180px;
-  background: linear-gradient(135deg, rgba(99, 102, 241, 0.2), rgba(168, 85, 247, 0.15));
-  border-radius: 8px;
+/* Responsive 16:9 Video Box Fix */
+.video-responsive-box {
   position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* Perfect 16:9 Ratio */
+  height: 0;
+  border-radius: 8px;
   overflow: hidden;
+  background: #000;
   margin-bottom: 1rem;
   border: 1px solid var(--border);
-  text-decoration: none;
 }
 
-.thumbnail-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.video-tag-icon { font-size: 3rem; }
-
-.video-overlay {
+.video-responsive-box iframe {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(9, 10, 15, 0.4);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background 0.3s ease;
-}
-
-.video-thumbnail-wrapper:hover .video-overlay {
-  background: rgba(9, 10, 15, 0.2);
-}
-
-.play-btn-circle {
-  width: 54px;
-  height: 54px;
-  background: var(--accent);
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 1.2rem;
-  box-shadow: 0 0 20px rgba(99, 102, 241, 0.6);
-  transition: transform 0.3s ease;
-}
-
-.video-thumbnail-wrapper:hover .play-btn-circle {
-  transform: scale(1.1);
-}
-
-.btn-play-link {
-  display: inline-block;
-  margin-top: 0.8rem;
-  padding: 0.6rem 1.2rem;
-  background: var(--accent);
-  color: #fff;
-  border-radius: 6px;
-  text-decoration: none;
-  font-size: 0.88rem;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-
-.btn-play-link:hover {
-  background: #4f46e5;
+  border: none;
 }
 
 .folder-banner {
-  height: 140px;
+  height: 160px;
   background: rgba(255, 255, 255, 0.02);
   border-radius: 8px;
   display: flex;
@@ -383,4 +329,5 @@ footer {
   .hero h1 { font-size: 2.2rem; }
   .about-grid { grid-template-columns: 1fr; }
   .nav-menu { display: none; }
+  .card { padding: 1rem; }
 }
