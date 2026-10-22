@@ -16,21 +16,15 @@ function filterCategory(category, event) {
 function openVideo(videoUrl) {
   const modal = document.getElementById('videoModal');
   const player = document.getElementById('videoPlayer');
-  
-  if (modal && player) {
-    player.src = videoUrl;
-    modal.classList.add('active');
-    document.body.style.overflow = 'hidden'; // Stop page scrolling when watching
-  }
+  player.src = videoUrl;
+  modal.style.display = 'flex';
 }
 
 function closeVideo(event) {
-  const modal = document.getElementById('videoModal');
-  const player = document.getElementById('videoPlayer');
-
-  if (modal && player) {
+  if (event.target.classList.contains('modal') || event.target.classList.contains('close-modal')) {
+    const modal = document.getElementById('videoModal');
+    const player = document.getElementById('videoPlayer');
     player.src = '';
-    modal.classList.remove('active');
-    document.body.style.overflow = 'auto'; // Restore page scrolling
+    modal.style.display = 'none';
   }
 }
