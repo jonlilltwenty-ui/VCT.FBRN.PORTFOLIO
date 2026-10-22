@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jonlill | Visual Designer & Video Editor</title>
+  <title>Jonlill | Video Editor & Visual Designer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,7 @@
   <header class="hero">
     <div class="hero-tag">FREELANCE CREATIVE STUDIO</div>
     <h1>Visuals Engineered for <span class="gradient-text">Impact & Motion</span>.</h1>
-    <p>Graphic Designer & Video Editor specializing in high-converting promo edits, apparel artwork, and digital brand identities.</p>
+    <p>Video Editor & Graphic Designer bringing short-form edits, branding assets, and promo content to life for creators, events, and organizations.</p>
     <div class="hero-actions">
       <a href="#works" class="btn btn-primary">Explore Portfolio</a>
       <a href="#contact" class="btn btn-ghost">Contact Jonlill</a>
@@ -40,17 +40,16 @@
     <div class="card about-card">
       <div class="about-info">
         <h2>About Me</h2>
-        <p>I'm Jonlill — a Graphic Designer and Video Editor with over 2 years of active freelance client experience and serving as Graphics Officer for school organizations. I turn concepts into sharp, high-tempo visual content that captures attention instantly.</p>
+        <p>Hey, I'm Jonlill! I specialize in short-form video editing and graphic design with over 2 years of active freelance work and leading graphics for school organizations. I turn raw footage and creative briefs into clean, high-tempo visuals meant to catch eyes instantly.</p>
       </div>
       <div class="skills-box">
-        <h3>Production Toolkit</h3>
+        <h3>Software & Tools</h3>
         <div class="pill-group">
           <span class="pill">Adobe Premiere Pro</span>
           <span class="pill">After Effects</span>
-          <span class="pill">Blender 3D</span>
-          <span class="pill">CapCut Pro</span>
-          <span class="pill">Generative AI Tools</span>
           <span class="pill">Photoshop & Illustrator</span>
+          <span class="pill">CapCut Pro</span>
+          <span class="pill">Blender 3D</span>
         </div>
       </div>
     </div>
@@ -61,19 +60,19 @@
     <h2 class="section-heading">Services Offered</h2>
     <div class="grid grid-3">
       <div class="card service-box">
-        <div class="service-icon">⚡</div>
-        <h3>Graphic Design</h3>
-        <p>Brand identity, vector logos, custom apparel graphics, social media posting borders, and promotional media.</p>
-      </div>
-      <div class="card service-box">
         <div class="service-icon">🎬</div>
         <h3>Video Editing</h3>
-        <p>Short-form video editing (Reels, Shorts, TikTok), pacing & cuts, motion graphics, face swaps, and promo videos.</p>
+        <p>Shorts, Reels, TikToks, travel edits, organizational promos, event highlights, and sound-synced cuts.</p>
+      </div>
+      <div class="card service-box">
+        <div class="service-icon">⚡</div>
+        <h3>Graphic Design</h3>
+        <p>Publication borders, logo marks, event posters, custom merch graphics, and brand assets.</p>
       </div>
       <div class="card service-box">
         <div class="service-icon">🌐</div>
-        <h3>3D & AI Integration</h3>
-        <p>Combining Blender 3D assets with advanced AI prompt generation for futuristic visual assets.</p>
+        <h3>3D & AI Workflows</h3>
+        <p>3D element integration using Blender and AI visual concepting for unique visual projects.</p>
       </div>
     </div>
   </section>
@@ -92,57 +91,61 @@
 
       <!-- Video Card 1 -->
       <div class="card work-card" data-category="video">
-        <div class="media-container">
-          <img src="https://lh3.googleusercontent.com/u/0/d/1Kbg2nQjMol6kJgOmvI6z1SeD8xbi2X0g=w800" alt="Travel Vlog Edit Thumbnail" class="thumbnail-img" referrerpolicy="no-referrer" onerror="this.src='https://images.unsplash.com/photo-1518709268805-4e9042af9f23?w=800'" />
+        <div class="media-container" onclick="openVideo('https://drive.google.com/file/d/1Kbg2nQjMol6kJgOmvI6z1SeD8xbi2X0g/preview')">
+          <div class="video-placeholder travel-bg">
+            <div class="play-overlay">▶</div>
+          </div>
           <span class="preview-badge">VIDEO EDIT</span>
-          <div class="play-overlay">▶</div>
         </div>
         <div class="work-details">
           <h3>Travel Vlog Edit</h3>
-          <p>Cinematic pacing, color balance, and sound design.</p>
-          <a href="https://drive.google.com/file/d/1Kbg2nQjMol6kJgOmvI6z1SeD8xbi2X0g/view" target="_blank" class="watch-btn">Watch Video Edit ↗</a>
+          <p>Color grading, sound design, and smooth transitions tailored for personal travel edits.</p>
+          <button class="watch-btn" onclick="openVideo('https://drive.google.com/file/d/1Kbg2nQjMol6kJgOmvI6z1SeD8xbi2X0g/preview')">Watch Video ▶</button>
         </div>
       </div>
 
       <!-- Video Card 2 -->
       <div class="card work-card" data-category="video">
-        <div class="media-container">
-          <img src="https://lh3.googleusercontent.com/u/0/d/1c8lEHqT4l5_twsY2vFkD3PLVe29vwigA=w800" alt="UE Promo Thumbnail" class="thumbnail-img" referrerpolicy="no-referrer" onerror="this.src='https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800'" />
+        <div class="media-container" onclick="openVideo('https://drive.google.com/file/d/1c8lEHqT4l5_twsY2vFkD3PLVe29vwigA/preview')">
+          <div class="video-placeholder promo-bg">
+            <div class="play-overlay">▶</div>
+          </div>
           <span class="preview-badge">VIDEO EDIT</span>
-          <div class="play-overlay">▶</div>
         </div>
         <div class="work-details">
           <h3>University of the East Promo</h3>
-          <p>Fast-cut organizational promo highlight tape.</p>
-          <a href="https://drive.google.com/file/d/1c8lEHqT4l5_twsY2vFkD3PLVe29vwigA/view" target="_blank" class="watch-btn">Watch Video Edit ↗</a>
+          <p>Fast-paced organizational hype reel crafted to drive engagement on campus socials.</p>
+          <button class="watch-btn" onclick="openVideo('https://drive.google.com/file/d/1c8lEHqT4l5_twsY2vFkD3PLVe29vwigA/preview')">Watch Video ▶</button>
         </div>
       </div>
 
       <!-- Video Card 3 -->
       <div class="card work-card" data-category="video">
-        <div class="media-container">
-          <img src="https://lh3.googleusercontent.com/u/0/d/1aqiNG0yKAJJkfeBaLq3UIkGxyM_9rNyE=w800" alt="DISCERNED Thumbnail" class="thumbnail-img" referrerpolicy="no-referrer" onerror="this.src='https://images.unsplash.com/photo-1511512578047-dfb367046420?w=800'" />
+        <div class="media-container" onclick="openVideo('https://drive.google.com/file/d/1aqiNG0yKAJJkfeBaLq3UIkGxyM_9rNyE/preview')">
+          <div class="video-placeholder reel-bg">
+            <div class="play-overlay">▶</div>
+          </div>
           <span class="preview-badge">VIDEO EDIT</span>
-          <div class="play-overlay">▶</div>
         </div>
         <div class="work-details">
           <h3>DISCERNED (Champion Reel)</h3>
-          <p>High-energy championship cut with audio sync.</p>
-          <a href="https://drive.google.com/file/d/1aqiNG0yKAJJkfeBaLq3UIkGxyM_9rNyE/view" target="_blank" class="watch-btn">Watch Video Edit ↗</a>
+          <p>High-energy championship recap edit with heavy beat-syncing and motion cuts.</p>
+          <button class="watch-btn" onclick="openVideo('https://drive.google.com/file/d/1aqiNG0yKAJJkfeBaLq3UIkGxyM_9rNyE/preview')">Watch Video ▶</button>
         </div>
       </div>
 
       <!-- Video Card 4 -->
       <div class="card work-card" data-category="video">
-        <div class="media-container">
-          <img src="https://lh3.googleusercontent.com/u/0/d/1FxNlyaxBDEIsZeaKzB9cx2skFkqrkKzT=w800" alt="Unicoss Garage Thumbnail" class="thumbnail-img" referrerpolicy="no-referrer" onerror="this.src='https://images.unsplash.com/photo-1617814076367-b759c7d7e738?w=800'" />
+        <div class="media-container" onclick="openVideo('https://drive.google.com/file/d/1FxNlyaxBDEIsZeaKzB9cx2skFkqrkKzT/preview')">
+          <div class="video-placeholder garage-bg">
+            <div class="play-overlay">▶</div>
+          </div>
           <span class="preview-badge">VIDEO EDIT</span>
-          <div class="play-overlay">▶</div>
         </div>
         <div class="work-details">
           <h3>Unicoss Garage Feature</h3>
-          <p>Automotive showcase with smooth tracking edits.</p>
-          <a href="https://drive.google.com/file/d/1FxNlyaxBDEIsZeaKzB9cx2skFkqrkKzT/view" target="_blank" class="watch-btn">Watch Video Edit ↗</a>
+          <p>Automotive showcase edit focused on speed ramps, crisp cuts, and engine audio sync.</p>
+          <button class="watch-btn" onclick="openVideo('https://drive.google.com/file/d/1FxNlyaxBDEIsZeaKzB9cx2skFkqrkKzT/preview')">Watch Video ▶</button>
         </div>
       </div>
 
@@ -154,7 +157,7 @@
         </div>
         <div class="work-details">
           <span class="category-tag">Graphic Design</span>
-          <p>Vector logo identity assets and mark concepts.</p>
+          <p>Vector logo identity projects and visual concepts created for various clients.</p>
           <a href="https://drive.google.com/drive/folders/1zf62c75T79nxm27_HbcuNFPzk7f22hIe" target="_blank" class="drive-link">Open Drive Folder ↗</a>
         </div>
       </div>
@@ -167,7 +170,7 @@
         </div>
         <div class="work-details">
           <span class="category-tag">Graphic Design</span>
-          <p>Apparel graphics and street-wear prints.</p>
+          <p>Custom apparel graphics, streetwear prints, and clothing layout mockups.</p>
           <a href="https://drive.google.com/drive/folders/1bcAAKsGaGgMupr8fxIIbMEZiD6CqMBBB" target="_blank" class="drive-link">Open Drive Folder ↗</a>
         </div>
       </div>
@@ -180,7 +183,7 @@
         </div>
         <div class="work-details">
           <span class="category-tag">Graphic Design</span>
-          <p>Custom publication borders and event templates.</p>
+          <p>Custom publication borders, story templates, and event post designs.</p>
           <a href="https://drive.google.com/drive/folders/1kpeZiKki91Wtd9FtZK4oLdsu0Q4e1tJe" target="_blank" class="drive-link">Open Drive Folder ↗</a>
         </div>
       </div>
@@ -188,17 +191,25 @@
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Contact Section -->
   <section id="contact" class="container">
     <div class="card contact-box">
       <h2>Let's Collaborate</h2>
-      <p>Have an upcoming edit, video campaign, or logo project? Message me directly.</p>
+      <p>Need a video edit, promotional banner, or graphic layout? Message me directly through my socials.</p>
       <div class="contact-links">
         <a href="https://www.instagram.com/vct.fbrn" target="_blank" class="btn btn-primary">Instagram: @vct.fbrn</a>
         <a href="https://www.facebook.com/share/19smDHbreX/" target="_blank" class="btn btn-ghost">Facebook Profile</a>
       </div>
     </div>
   </section>
+
+  <!-- Video Modal -->
+  <div id="videoModal" class="modal" onclick="closeVideo(event)">
+    <div class="modal-content">
+      <span class="close-modal" onclick="closeVideo(event)">&times;</span>
+      <iframe id="videoPlayer" src="" allow="autoplay" allowfullscreen></iframe>
+    </div>
+  </div>
 
   <footer>
     <p>© 2026 Jonlill. Designed & Built for Web.</p>
