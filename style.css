@@ -347,7 +347,7 @@ body {
 .drive-link {
   display: inline-block;
   margin-top: 0.8rem;
-  color: #a855f7 !important; /* High contrast bright purple */
+  color: #a855f7 !important;
   text-decoration: underline;
   font-size: 0.9rem;
   font-weight: 600;
@@ -357,46 +357,63 @@ body {
   color: #c084fc !important;
 }
 
-/* Modal Video Player */
+/* Fixed Full-Screen Popup Modal */
 .modal {
   display: none;
   position: fixed;
-  z-index: 1000;
-  left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.9);
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.92);
+  z-index: 99999;
   align-items: center;
   justify-content: center;
+  padding: 20px;
+}
+
+.modal.active {
+  display: flex !important;
 }
 
 .modal-content {
   position: relative;
-  width: 90%;
-  max-width: 800px;
-  height: 0;
-  padding-bottom: 50.25%; /* 16:9 ratio */
+  width: 100%;
+  max-width: 850px;
+  aspect-ratio: 16 / 9;
+  background: #000;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
 
 .modal-content iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   border: none;
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 .close-modal {
   position: absolute;
-  top: -40px;
+  top: -45px;
   right: 0;
-  color: #fff;
-  font-size: 35px;
+  color: #ffffff;
+  font-size: 32px;
   font-weight: bold;
   cursor: pointer;
+  background: rgba(255, 255, 255, 0.1);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.close-modal:hover {
+  background: rgba(255, 255, 255, 0.25);
 }
 
 .contact-box {
@@ -428,5 +445,5 @@ footer {
   .hero h1 { font-size: 2.2rem; }
   .nav-menu { display: none; }
   .card { padding: 1.2rem; }
-  .modal-content { padding-bottom: 75%; }
+  .modal-content { aspect-ratio: 9 / 16; max-width: 360px; } /* Fits phone vertical video edits cleanly */
 }
