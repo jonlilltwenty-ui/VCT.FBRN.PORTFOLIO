@@ -1,4 +1,4 @@
-// 1. Interactive 3D Canvas Particle Network
+// 1. Interactive 3D Canvas Particles
 const canvas = document.getElementById('bg-canvas');
 const ctx = canvas.getContext('2d');
 
@@ -16,7 +16,6 @@ class Particle {
   constructor() {
     this.x = Math.random() * width;
     this.y = Math.random() * height;
-    this.z = Math.random() * width;
     this.vx = (Math.random() - 0.5) * 0.8;
     this.vy = (Math.random() - 0.5) * 0.8;
   }
@@ -30,9 +29,8 @@ class Particle {
   }
 
   draw() {
-    const radius = 1.5;
     ctx.beginPath();
-    ctx.arc(this.x, this.y, radius, 0, Math.PI * 2);
+    ctx.arc(this.x, this.y, 1.5, 0, Math.PI * 2);
     ctx.fillStyle = 'rgba(129, 140, 248, 0.5)';
     ctx.fill();
   }
@@ -68,21 +66,17 @@ function animate() {
 }
 animate();
 
-// 2. 3D Tilt Effect on Cards
+// 2. 3D Tilt Effect
 const tiltCards = document.querySelectorAll('.tilt-card');
-
 tiltCards.forEach((card) => {
   card.addEventListener('mousemove', (e) => {
     const rect = card.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const y = e.clientY - rect.top;
-    
     const centerX = rect.width / 2;
     const centerY = rect.height / 2;
-    
     const rotateX = (y - centerY) / 10;
     const rotateY = (centerX - x) / 10;
-    
     card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
   });
 
@@ -91,7 +85,7 @@ tiltCards.forEach((card) => {
   });
 });
 
-// 3. Category Filter Logic
+// 3. Category Filter
 const filterBtns = document.querySelectorAll('.filter-btn');
 const workCards = document.querySelectorAll('.work-card');
 
@@ -111,3 +105,30 @@ filterBtns.forEach((btn) => {
     });
   });
 });
+
+// 4. Video Player Modal Logic
+function playVideo(url, title) {
+  const modal = document.getElementById('video-modal');
+  const iframe = document.getElementById('video-iframe');
+  const modalTitle = document.getElementById('modal-title');
+
+  modalTitle.textContent = title;
+  iframe.src = url;
+  modal.style.display = 'flex';
+}
+
+function closeVideo() {
+  const modal = document.getElementById('video-modal');
+  const iframe = document.getElementById('video-iframe');
+
+  iframe.src = '';
+  modal.style.display = 'none';
+}
+
+// Close modal when clicking outside
+window.onclick = function(event) {
+  const modal = document.getElementById('video-modal');
+  if (event.target === modal) {
+    closeVideo();
+  }
+};
