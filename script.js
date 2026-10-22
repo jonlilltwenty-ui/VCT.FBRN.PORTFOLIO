@@ -1,5 +1,5 @@
-// Filter Works Category
-function filterCategory(category) {
+// Filter Category
+function filterCategory(category, event) {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const workCards = document.querySelectorAll('.work-card');
 
