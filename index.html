@@ -11,7 +11,7 @@
 </head>
 <body>
 
-  <!-- Interactive 3D Canvas Background -->
+  <!-- Background Canvas -->
   <canvas id="bg-canvas"></canvas>
 
   <!-- Navigation -->
@@ -38,7 +38,7 @@
     </div>
   </section>
 
-  <!-- About & Tech Stack -->
+  <!-- About Section -->
   <section id="about" class="section">
     <div class="glass-card about-grid">
       <div class="about-text">
@@ -59,25 +59,35 @@
     </div>
   </section>
 
-  <!-- Services Offered -->
+  <!-- Services -->
   <section id="services" class="section">
     <h2 class="section-title">Services Provided</h2>
     <div class="services-grid">
+      
       <div class="glass-card service-card tilt-card">
-        <div class="icon">🎨</div>
+        <div class="svg-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L11 18l7-5z"/><path d="M2 2l7.586 7.586"/><circle cx="11" cy="11" r="2"/></svg>
+        </div>
         <h3>Graphic Design</h3>
         <p>Brand identity, logo design, t-shirt/apparel graphics, social media posting borders, and promotional material.</p>
       </div>
+
       <div class="glass-card service-card tilt-card">
-        <div class="icon">🎬</div>
+        <div class="svg-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/><line x1="7" y1="2" x2="7" y2="22"/><line x1="17" y1="2" x2="17" y2="22"/><line x1="2" y1="12" x2="22" y2="12"/><line x1="2" y1="7" x2="7" y2="7"/><line x1="2" y1="17" x2="7" y2="17"/><line x1="17" y1="17" x2="22" y2="17"/><line x1="17" y1="7" x2="22" y2="7"/></svg>
+        </div>
         <h3>Video Editing</h3>
         <p>Short-form video edits (Reels/TikTok/Shorts), cinematic cuts, motion graphics, face-swaps, and promotional video clips.</p>
       </div>
+
       <div class="glass-card service-card tilt-card">
-        <div class="icon">💎</div>
+        <div class="svg-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
         <h3>3D & AI Concepts</h3>
         <p>Integrating Blender 3D element rendering and modern generative AI prompts for unique artistic visual styles.</p>
       </div>
+
     </div>
   </section>
 
@@ -90,61 +100,98 @@
       <button class="filter-btn" data-filter="logos">Logos</button>
       <button class="filter-btn" data-filter="tshirts">T-Shirt Designs</button>
       <button class="filter-btn" data-filter="borders">Social Borders</button>
-      <button class="filter-btn" data-filter="video">Video Editing</button>
+      <button class="filter-btn" data-filter="video">Video Edits</button>
     </div>
 
     <div class="portfolio-grid">
+
       <!-- Item 1: Logos -->
       <div class="glass-card work-card tilt-card" data-category="logos">
         <div class="work-preview">
-          <span class="placeholder-icon">📐</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="1.5"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
         </div>
         <div class="work-info">
           <h4>Logo Design Collection</h4>
           <p>Custom vector logo concepts & visual brand marks.</p>
-          <a href="https://drive.google.com/drive/folders/1zf62c75T79nxm27_HbcuNFPzk7f22hIe" target="_blank" class="work-link">View in Drive ↗</a>
+          <a href="https://drive.google.com/drive/folders/1zf62c75T79nxm27_HbcuNFPzk7f22hIe" target="_blank" class="work-link">View Folder in Drive ↗</a>
         </div>
       </div>
 
       <!-- Item 2: T-Shirts -->
       <div class="glass-card work-card tilt-card" data-category="tshirts">
         <div class="work-preview">
-          <span class="placeholder-icon">👕</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="1.5"><path d="M20.38 3.46L16 2a4 4 0 0 1-8 0L3.62 3.46a2 2 0 0 0-1.34 2.23l.58 3.47a1 1 0 0 0 .99.84H6v10a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V10h2.15a1 1 0 0 0 .99-.84l.58-3.47a2 2 0 0 0-1.34-2.23z"/></svg>
         </div>
         <div class="work-info">
           <h4>Apparel & T-Shirt Graphics</h4>
           <p>High-resolution street-style and custom apparel graphic prints.</p>
-          <a href="https://drive.google.com/drive/folders/1bcAAKsGaGgMupr8fxIIbMEZiD6CqMBBB" target="_blank" class="work-link">View in Drive ↗</a>
+          <a href="https://drive.google.com/drive/folders/1bcAAKsGaGgMupr8fxIIbMEZiD6CqMBBB" target="_blank" class="work-link">View Folder in Drive ↗</a>
         </div>
       </div>
 
       <!-- Item 3: Social Borders -->
       <div class="glass-card work-card tilt-card" data-category="borders">
         <div class="work-preview">
-          <span class="placeholder-icon">🖼️</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#818cf8" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
         </div>
         <div class="work-info">
           <h4>Social Media Posting Borders</h4>
           <p>Framing and posting layout templates built for social media channels.</p>
-          <a href="https://drive.google.com/drive/folders/1kpeZiKki91Wtd9FtZK4oLdsu0Q4e1tJe" target="_blank" class="work-link">View in Drive ↗</a>
+          <a href="https://drive.google.com/drive/folders/1kpeZiKki91Wtd9FtZK4oLdsu0Q4e1tJe" target="_blank" class="work-link">View Folder in Drive ↗</a>
         </div>
       </div>
 
-      <!-- Item 4: Video Editing -->
+      <!-- Item 4: Interactive Video Player 1 -->
       <div class="glass-card work-card tilt-card" data-category="video">
-        <div class="work-preview">
-          <span class="placeholder-icon">🎥</span>
+        <div class="work-preview video-play-box" onclick="playVideo('https://drive.google.com/file/d/1Kbg2nQjMol6kJgOmvI6z1SeD8xbi2X0g/preview', 'Travel Vlog Edit')">
+          <div class="play-btn-overlay">▶</div>
         </div>
         <div class="work-info">
-          <h4>Video Editing (2026)</h4>
-          <p>Paced short clips, motion effects, and promotional edits.</p>
-          <a href="https://drive.google.com/drive/folders/1WMLmRBC4MVpSSdSvYUOrUWvuZGqDeTDp" target="_blank" class="work-link">View in Drive ↗</a>
+          <h4>Travel Vlog Edit</h4>
+          <p>Cinematic pacing, color grading, and transition motion edit.</p>
+          <button class="play-inline-btn" onclick="playVideo('https://drive.google.com/file/d/1Kbg2nQjMol6kJgOmvI6z1SeD8xbi2X0g/preview', 'Travel Vlog Edit')">▶ Play Video</button>
         </div>
       </div>
+
+      <!-- Item 5: Interactive Video Player 2 -->
+      <div class="glass-card work-card tilt-card" data-category="video">
+        <div class="work-preview video-play-box" onclick="playVideo('https://drive.google.com/file/d/1c8lEHqT4l5_twsY2vFkD3PLVe29vwigA/preview', 'University of the East Promo')">
+          <div class="play-btn-overlay">▶</div>
+        </div>
+        <div class="work-info">
+          <h4>University of the East</h4>
+          <p>Promotional edit featuring campus highlights and energetic audio.</p>
+          <button class="play-inline-btn" onclick="playVideo('https://drive.google.com/file/d/1c8lEHqT4l5_twsY2vFkD3PLVe29vwigA/preview', 'University of the East Promo')">▶ Play Video</button>
+        </div>
+      </div>
+
+      <!-- Item 6: Interactive Video Player 3 -->
+      <div class="glass-card work-card tilt-card" data-category="video">
+        <div class="work-preview video-play-box" onclick="playVideo('https://drive.google.com/file/d/1aqiNG0yKAJJkfeBaLq3UIkGxyM_9rNyE/preview', 'Discerned - Champion Edit')">
+          <div class="play-btn-overlay">▶</div>
+        </div>
+        <div class="work-info">
+          <h4>DISCERNED (CHAMPION)</h4>
+          <p>High-energy championship video cut and sequence sync.</p>
+          <button class="play-inline-btn" onclick="playVideo('https://drive.google.com/file/d/1aqiNG0yKAJJkfeBaLq3UIkGxyM_9rNyE/preview', 'Discerned - Champion Edit')">▶ Play Video</button>
+        </div>
+      </div>
+
     </div>
   </section>
 
-  <!-- Contact -->
+  <!-- Video Modal Popup Player -->
+  <div id="video-modal" class="modal">
+    <div class="modal-content glass-card">
+      <span class="close-modal" onclick="closeVideo()">&times;</span>
+      <h3 id="modal-title">Video Title</h3>
+      <div class="video-container">
+        <iframe id="video-iframe" src="" allow="autoplay" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Section -->
   <section id="contact" class="section">
     <div class="glass-card contact-card">
       <h2>Let's Build Something Great</h2>
