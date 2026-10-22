@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jonlill | Graphic Designer & Video Editor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Interactive 3D Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="logo">JONLILL<span>.</span></div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#works">Works</a></li>
+      <li><a href="#contact" class="btn-nav">Let's Talk</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="badge">Available for Freelance & Creative Projects</div>
+      <h1>Visuals Brought to Life in <span>3D & Motion</span></h1>
+      <p>Freelance Graphic Designer & Video Editor with 2+ years of experience crafting high-impact visual identities, custom merch, and short-form video content.</p>
+      <div class="hero-btns">
+        <a href="#works" class="btn-primary">View Portfolio</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Tech Stack -->
+  <section id="about" class="section">
+    <div class="glass-card about-grid">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>I’m Jonlill — a Graphic Designer and Video Editor with over 2 years of freelance experience, along with serving as a Graphics Officer for school organizations. I specialize in turning concepts into sleek, high-performing visual media.</p>
+      </div>
+      <div class="tech-stack">
+        <h3>Tools & Tech</h3>
+        <div class="tags">
+          <span class="tag">Adobe Premiere Pro</span>
+          <span class="tag">After Effects</span>
+          <span class="tag">Blender 3D</span>
+          <span class="tag">CapCut Pro</span>
+          <span class="tag">AI Generative Tools</span>
+          <span class="tag">Photoshop & Illustrator</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Offered -->
+  <section id="services" class="section">
+    <h2 class="section-title">Services Provided</h2>
+    <div class="services-grid">
+      <div class="glass-card service-card tilt-card">
+        <div class="icon">🎨</div>
+        <h3>Graphic Design</h3>
+        <p>Brand identity, logo design, t-shirt/apparel graphics, social media posting borders, and promotional material.</p>
+      </div>
+      <div class="glass-card service-card tilt-card">
+        <div class="icon">🎬</div>
+        <h3>Video Editing</h3>
+        <p>Short-form video edits (Reels/TikTok/Shorts), cinematic cuts, motion graphics, face-swaps, and promotional video clips.</p>
+      </div>
+      <div class="glass-card service-card tilt-card">
+        <div class="icon">💎</div>
+        <h3>3D & AI Concepts</h3>
+        <p>Integrating Blender 3D element rendering and modern generative AI prompts for unique artistic visual styles.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Works Gallery -->
+  <section id="works" class="section">
+    <h2 class="section-title">Selected Works</h2>
+    
+    <div class="filter-container">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="logos">Logos</button>
+      <button class="filter-btn" data-filter="tshirts">T-Shirt Designs</button>
+      <button class="filter-btn" data-filter="borders">Social Borders</button>
+      <button class="filter-btn" data-filter="video">Video Editing</button>
+    </div>
+
+    <div class="portfolio-grid">
+      <!-- Item 1: Logos -->
+      <div class="glass-card work-card tilt-card" data-category="logos">
+        <div class="work-preview">
+          <span class="placeholder-icon">📐</span>
+        </div>
+        <div class="work-info">
+          <h4>Logo Design Collection</h4>
+          <p>Custom vector logo concepts & visual brand marks.</p>
+          <a href="https://drive.google.com/drive/folders/1zf62c75T79nxm27_HbcuNFPzk7f22hIe" target="_blank" class="work-link">View in Drive ↗</a>
+        </div>
+      </div>
+
+      <!-- Item 2: T-Shirts -->
+      <div class="glass-card work-card tilt-card" data-category="tshirts">
+        <div class="work-preview">
+          <span class="placeholder-icon">👕</span>
+        </div>
+        <div class="work-info">
+          <h4>Apparel & T-Shirt Graphics</h4>
+          <p>High-resolution street-style and custom apparel graphic prints.</p>
+          <a href="https://drive.google.com/drive/folders/1bcAAKsGaGgMupr8fxIIbMEZiD6CqMBBB" target="_blank" class="work-link">View in Drive ↗</a>
+        </div>
+      </div>
+
+      <!-- Item 3: Social Borders -->
+      <div class="glass-card work-card tilt-card" data-category="borders">
+        <div class="work-preview">
+          <span class="placeholder-icon">🖼️</span>
+        </div>
+        <div class="work-info">
+          <h4>Social Media Posting Borders</h4>
+          <p>Framing and posting layout templates built for social media channels.</p>
+          <a href="https://drive.google.com/drive/folders/1kpeZiKki91Wtd9FtZK4oLdsu0Q4e1tJe" target="_blank" class="work-link">View in Drive ↗</a>
+        </div>
+      </div>
+
+      <!-- Item 4: Video Editing -->
+      <div class="glass-card work-card tilt-card" data-category="video">
+        <div class="work-preview">
+          <span class="placeholder-icon">🎥</span>
+        </div>
+        <div class="work-info">
+          <h4>Video Editing (2026)</h4>
+          <p>Paced short clips, motion effects, and promotional edits.</p>
+          <a href="https://drive.google.com/drive/folders/1WMLmRBC4MVpSSdSvYUOrUWvuZGqDeTDp" target="_blank" class="work-link">View in Drive ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="glass-card contact-card">
+      <h2>Let's Build Something Great</h2>
+      <p>Have an upcoming project, promo video, or design need? Reach out via social media.</p>
+      
+      <div class="social-links">
+        <a href="https://www.instagram.com/vct.fbrn" target="_blank" class="social-btn">
+          Instagram: @vct.fbrn
+        </a>
+        <a href="https://www.facebook.com/share/19smDHbreX/" target="_blank" class="social-btn">
+          Facebook Profile
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Jonlill. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
